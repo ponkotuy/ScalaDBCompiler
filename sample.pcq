@@ -1,0 +1,13 @@
+
+# コメント
+
+table ship {
+  # idは自動付与
+  user_id Long
+  name String
+  lv Int
+}
+
+queries {
+  def find_from_user(uid Long) = ship.find(user_id = uid)
+}
